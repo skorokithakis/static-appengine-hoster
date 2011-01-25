@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>App example</h2>
+<p>
+This is a sample page. It can display an image using a variable media URL. Media will be loaded from {{ MEDIA_URL }}:
+<br><br>
+<a href="http://www.stochastictechnologies.com"><img src="{{ MEDIA_URL }}/images/logo.png"></a>
+</p>
+<p>
+You can also reverse URLs: <a href="{{ url("test") }}">{{ url("test") }}</a>
+</p>
+{% endblock %}

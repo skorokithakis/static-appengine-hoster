@@ -1,0 +1,24 @@
+application: myappname
+version: 1
+runtime: python
+api_version: 1
+
+default_expiration: "5d"
+
+builtins:
+- datastore_admin: on
+
+inbound_services:
+- warmup
+
+handlers:
+- url: /media
+  static_dir: application/media
+
+- url: /robots.txt
+  static_files: application/media/robots.txt
+  upload: application/media/robots.txt
+
+- url: .*
+  script: main.py
+
