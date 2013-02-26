@@ -10,4 +10,7 @@ This is a sample page. It can display an image using a variable media URL. Media
 <p>
 You can also reverse URLs: <a href="{{ url("test") }}">{{ url("test") }}</a>
 </p>
+<p>
+Referring to templates without adding them to the settings is also supported: <a href="/statictest/">/statictest/</a>
+</p>
 {% endblock %}
