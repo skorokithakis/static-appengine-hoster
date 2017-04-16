@@ -1,12 +1,12 @@
 application: myappname
 version: 1
-runtime: python
+runtime: python27
 api_version: 1
 
 default_expiration: "5d"
 
-builtins:
-- datastore_admin: on
+#builtins:
+#- datastore_admin: on
 
 inbound_services:
 - warmup
